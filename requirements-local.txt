@@ -1,0 +1,11 @@
+torch
+torchvision
+opencv-python
+pycocotools
+matplotlib
+onnxruntime
+flask
+transformers
+accelerate
+timm
+sentencepiece
