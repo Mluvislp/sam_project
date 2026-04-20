@@ -1,6 +1,6 @@
 @echo off
-cd /d D:\Python\sam_project
+cd /d "%~dp0"
 start "SAM Browser" http://127.0.0.1:7861
-D:\Python\sam_project\venv\Scripts\python.exe D:\Python\sam_project\sam_local_app.py
+"%~dp0venv\Scripts\python.exe" "%~dp0sam_local_app.py"
 pause
 

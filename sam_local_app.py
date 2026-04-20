@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image
 from flask import Flask, jsonify, render_template_string, request, send_from_directory
 
-ROOT = Path(r"D:\Python\sam_project")
+ROOT = Path(__file__).resolve().parent
 REPO = ROOT / "segment-anything"
 sys.path.insert(0, str(REPO))
 

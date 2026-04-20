@@ -9,7 +9,7 @@ from PIL import Image
 from flask import Flask, jsonify, render_template_string, request, send_from_directory
 from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection
 
-ROOT = Path(r"D:\Python\sam_project")
+ROOT = Path(__file__).resolve().parent
 REPO = ROOT / "segment-anything"
 sys.path.insert(0, str(REPO))
 from segment_anything import sam_model_registry, SamPredictor  # noqa: E402
